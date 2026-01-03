@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "*",   // allow all (fine for demo/interview)
+  methods: ["GET", "POST", "DELETE"],
+}));
+
 app.use(express.json());
 
 
