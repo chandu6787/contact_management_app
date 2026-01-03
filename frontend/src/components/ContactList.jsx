@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactList({ contacts, fetchContacts }) {
   const deleteContact = async (id) => {
-    await fetch(`https://contact-management-zrfc.onrender.com/api/contacts/${id}`, {
+    await fetch(`https://contact-management-backend-6w3y.onrender.com/api/contacts/${id}`, {
       method: "DELETE"
     });
     fetchContacts();

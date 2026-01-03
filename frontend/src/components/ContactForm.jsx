@@ -18,7 +18,7 @@ function ContactForm({ fetchContacts }) {
 
     if (!isValid) return;
 
-    await fetch("https://contact-management-zrfc.onrender.com/api/contacts", {
+    await fetch("https://contact-management-backend-6w3y.onrender.com/api/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form)

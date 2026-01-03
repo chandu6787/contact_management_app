@@ -6,7 +6,7 @@ function App() {
   const [contacts, setContacts] = useState([]);
 
   const fetchContacts = async () => {
-    const res = await fetch("https://contact-management-zrfc.onrender.com/api/contacts");
+    const res = await fetch(" https://contact-management-backend-6w3y.onrender.com/api/contacts");
     const data = await res.json();
     setContacts(data);
   };
